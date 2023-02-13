@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Conditional Statement 1</title>
+</head>
+
+<body>
+    <!-- Viết chương trình để kiểm tra môn học hiện tại.
+    Nếu môn học là Javascript thì in ra "I'm studying Javascript",
+    ngược lại in ra "I'm not studying Javascript"
+    -->
+    <form action="">
+        Mark: <input id="mark" type="text">
+        <button id="btn-action" type="button">Submit</button>
+    </form>
+    <script>
+        let btnAction = document.getElementById("btn-action");
+        btnAction.addEventListener("click", () => {
+            let mark = document.getElementById("mark").value;
+
+            // 
+            if (parseFloat(mark) >= 8.5) {
+                console.log("Bạn được tuyển thẳng");
+            } else {
+                console.log("Bạn chưa đủ điểm");
+            }
+        });
+    </script>
+</body>
+
+</html>
